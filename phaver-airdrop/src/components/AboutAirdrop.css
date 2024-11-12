@@ -1,0 +1,158 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* About Section */
+.about {
+  background-color: #282c34;
+  color: #fff;
+  min-height: 80vh; /* Adjusted for better responsiveness */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+/* Content Styling */
+.about-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.main-button-container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  margin: 1rem auto; /* Center within parent container */
+}
+
+.main-button {
+  background-color: #333;
+  color: #fff;
+  padding: 0.5rem 1.5rem;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: background-color 0.3s ease;
+  margin: auto; /* Center button within its container */
+}
+
+.main-button:hover {
+  background-color: #444;
+}
+
+.main-button img {
+  width: 100px;
+  height: auto;
+}
+
+/* Exchange Button Container */
+.exchange-button-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.exchange-button {
+  background-color: #222;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.exchange-button:hover {
+  background-color: #333;
+}
+
+.exchange-button img {
+  width: 70px;
+  height: auto;
+}
+
+/* Read More Link */
+.read-more {
+  margin-top: 1rem;
+}
+
+.read-more a {
+  color: skyblue;
+  text-decoration: none;
+  font-size: 1.5rem;
+  transition: text-decoration 0.3s ease;
+}
+
+.read-more a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Adjustments */
+@media (min-width: 768px) {
+  .about-content h1 {
+    font-size: 3rem;
+  }
+
+  .main-button {
+    font-size: 1.3rem;
+    padding: 0.7rem 2rem;
+  }
+
+  .exchange-button {
+    padding: 0.5rem 1.5rem;
+    font-size: 1.1rem;
+  }
+
+  .main-button img {
+    width: 120px;
+  }
+
+  .exchange-button img {
+    width: 80px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-content h1 {
+    font-size: 2rem;
+  }
+
+  .main-button {
+    font-size: 1rem;
+    padding: 0.5rem 1.2rem;
+  }
+
+  .exchange-button {
+    font-size: 0.9rem;
+    padding: 0.4rem 1rem;
+  }
+
+  .main-button img {
+    width: 90px;
+  }
+
+  .exchange-button img {
+    width: 60px;
+  }
+
+  .read-more a {
+    font-size: 1.3rem;
+  }
+}

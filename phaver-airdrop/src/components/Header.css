@@ -1,0 +1,51 @@
+/* Header Section */
+.header {
+  position: sticky; /* Makes the header sticky */
+  top: 0; /* Sticks the header to the top of the viewport */
+  z-index: 1000; /* Ensures the header stays above other elements */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 3rem; /* Increased padding for a larger header */
+  background-color: #282c34;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a slightly larger shadow for depth */
+}
+
+.logo {
+  font-size: 2rem; /* Increased font size */
+  font-weight: bold;
+}
+
+/* Social navigation styling */
+.social-nav {
+  display: flex;
+  align-items: center;
+}
+
+.social-nav a {
+  color: white;
+  margin: 0 1rem; /* Increased margin for more spacing */
+  font-size: 1.5rem; /* Larger icon size */
+  transition: color 0.3s ease;
+}
+
+.social-nav a:hover {
+  color: #ff4500; /* Change this color to any highlight color you'd like */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .header {
+    padding: 1rem 1.5rem; /* Adjust padding for mobile view */
+  }
+
+  .logo {
+    font-size: 1.5rem; /* Adjust font size for mobile view */
+  }
+
+  .social-nav a {
+    font-size: 1.2rem; /* Adjust icon size for mobile view */
+    margin: 0 0.5rem; /* Adjust margin for mobile view */
+  }
+}

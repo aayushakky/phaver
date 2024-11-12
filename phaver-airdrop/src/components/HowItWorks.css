@@ -1,0 +1,107 @@
+/* How-It-Works Section */
+.how-it-works {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  color: #ffffff;
+  margin: 0;
+  padding: 20px;
+  background-color: #282c34;
+  overflow: hidden;
+}
+
+/* Content Styling */
+.how-it-works-content {
+  width: 90%;
+  max-width: 700px;
+  padding: 20px;
+  background-image: url('../image/m_claim_banner_bk_x4.png');
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+/* Header Styling */
+.how-it-works h1 {
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* Paragraph Styling */
+.how-it-works p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Highlight Text */
+.highlight {
+  color: #6a89cc;
+  font-weight: bold;
+}
+
+/* Claim Button */
+.claim-button {
+  padding: 12px 25px;
+  background-color: #333;
+  color: #ffffff;
+  border: 2px solid #6a89cc;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  display: block;
+  width: 100%;
+  max-width: 250px;
+  margin: 20px auto 0;
+}
+
+.claim-button:hover {
+  background-color: #6a89cc;
+  color: #000;
+}
+
+/* Responsive Adjustments */
+@media (min-width: 768px) {
+  .how-it-works {
+    padding: 40px;
+  }
+
+  .how-it-works-content {
+    padding: 30px;
+  }
+
+  .how-it-works h1 {
+    font-size: 2.5rem;
+  }
+
+  .how-it-works p {
+    font-size: 1.2rem;
+  }
+
+  .claim-button {
+    padding: 15px 30px;
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .how-it-works h1 {
+    font-size: 1.8rem;
+  }
+
+  .how-it-works p {
+    font-size: 0.9rem;
+  }
+
+  .claim-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+}
