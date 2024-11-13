@@ -9,12 +9,13 @@
   padding: 20px;
   background-color: #282c34;
   overflow: hidden;
+  margin-top: 100px;
 }
 
 /* Content Styling */
 .how-it-works-content {
   width: 90%;
-  max-width: 700px;
+  max-width: 1200px;
   padding: 20px;
   background-image: url('../image/m_claim_banner_bk_x4.png');
   background-size: cover;
@@ -48,7 +49,7 @@
 
 /* Claim Button */
 .claim-button {
-  padding: 12px 25px;
+  padding: 18px 35px; /* Increased padding for a larger button */
   background-color: #333;
   color: #ffffff;
   border: 2px solid #6a89cc;
@@ -56,10 +57,11 @@
   font-weight: bold;
   cursor: pointer;
   transition: background-color 0.3s ease, color 0.3s ease;
-  display: block;
-  width: 100%;
-  max-width: 250px;
+  display: inline-block; /* Ensures the button stays in one line */
+  width: auto; /* Set to auto to ensure the button width adjusts to content */
+  max-width: 100%; /* Prevents the button from exceeding container width */
   margin: 20px auto 0;
+  font-size: 1.2rem; /* Slightly larger font size */
 }
 
 .claim-button:hover {
@@ -86,8 +88,8 @@
   }
 
   .claim-button {
-    padding: 15px 30px;
-    font-size: 1.1rem;
+    padding: 20px 40px; /* Larger padding on larger screens */
+    font-size: 1.3rem; /* Larger font size on larger screens */
   }
 }
 
@@ -101,7 +103,7 @@
   }
 
   .claim-button {
-    padding: 10px 20px;
-    font-size: 1rem;
+    padding: 12px 25px; /* Adjust padding for small screens */
+    font-size: 1.1rem; /* Adjust font size for small screens */
   }
 }

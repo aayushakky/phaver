@@ -1,0 +1,180 @@
+/* General container styles for Whitepaper Section */
+.container {
+    background-color: #1c1c1f;
+    color: white;
+    padding: 3rem; /* Increased padding for more space inside */
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px; /* Increased max width */
+    width: 95%; /* Slightly wider */
+    margin: auto;
+    flex-wrap: wrap; /* Allows the content to wrap on smaller screens */
+}
+
+.textSection {
+    max-width: 600px; /* Increased text section width */
+    flex: 1; /* Allow it to take full available space */
+}
+
+.heading {
+    font-size: 3rem; /* Increased font size for the heading */
+    margin: 0;
+}
+
+.description {
+    font-size: 1.2rem; /* Slightly larger description text */
+    color: #b3b3b3;
+    margin: 1.5rem 0;
+}
+
+.button {
+    background-color: #5e5ce6;
+    color: white;
+    padding: 1rem 2rem; /* Increased padding for a bigger button */
+    font-size: 1.1rem;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+.image {
+    width: 200px; /* Increased image size */
+}
+
+/* Logo Section Styles */
+.logo-section {
+    text-align: center;
+    margin-top: 50px;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 50px; /* Increased the gap between the heading and logos */
+    color: #fff;
+    margin-top: 10px;
+}
+
+.logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 50px;
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-top: 90px;
+}
+
+.logo {
+    max-width: 700px; /* Increased max width for logo size */
+    max-height: 350px; /* Increased max height for logo size */
+    object-fit: contain;
+    transition: opacity 0.3s ease;
+}
+
+.logo:hover {
+    opacity: 0.5;
+}
+
+/* Responsive Adjustments */
+
+/* Tablet and up */
+@media (max-width: 1024px) {
+    .container {
+        padding: 2rem; /* Adjusted padding */
+        flex-direction: column; /* Stack sections vertically */
+    }
+
+    .textSection {
+        max-width: 80%; /* Allow more width for smaller screens */
+        margin-bottom: 2rem; /* Add some space below */
+    }
+
+    .heading {
+        font-size: 2.5rem;
+    }
+
+    .description {
+        font-size: 1.1rem;
+    }
+
+    .logos {
+        justify-content: center;
+    }
+
+    .logo {
+        max-width: 400px; /* Reduce logo size */
+        max-height: 200px;
+    }
+}
+
+/* Mobile and smaller devices */
+@media (max-width: 768px) {
+    .container {
+        padding: 1.5rem;
+        flex-direction: column;
+    }
+
+    .textSection {
+        max-width: 90%;
+        margin-bottom: 2rem;
+    }
+
+    .heading {
+        font-size: 2rem;
+    }
+
+    .description {
+        font-size: 1rem;
+    }
+
+    .logos {
+        justify-content: center;
+        margin-top: 70px;
+    }
+
+    .logo {
+        max-width: 300px; /* Smaller logo size */
+        max-height: 150px;
+    }
+
+    .button {
+        padding: 1rem 2rem;
+        font-size: 1rem;
+        width: 100%;
+        max-width: 250px;
+    }
+}
+
+/* Extra small mobile screens */
+@media (max-width: 480px) {
+    .container {
+        padding: 1rem;
+    }
+
+    .heading {
+        font-size: 1.5rem;
+    }
+
+    .description {
+        font-size: 0.9rem;
+    }
+
+    .logos {
+        justify-content: center;
+        margin-top: 40px;
+    }
+
+    .logo {
+        max-width: 250px; /* Smaller logo size for extra small screens */
+        max-height: 120px;
+    }
+
+    .button {
+        padding: 12px 25px;
+        font-size: 1rem;
+        width: 100%;
+        max-width: 200px;
+    }
+}

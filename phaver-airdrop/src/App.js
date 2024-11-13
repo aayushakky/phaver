@@ -30,6 +30,7 @@ import React from 'react';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import AboutAirdrop from './components/AboutAirdrop';
+import Whitepaper from './components/Whitepapaer';
 import HowItWorks from './components/HowItWorks';
 import FAQ from './components/FAQ';
 // import Appstore from './components/Appstore';
@@ -42,6 +43,7 @@ function App() {
       <Header />
       <Hero />
       <AboutAirdrop />
+      <Whitepaper/>
       <HowItWorks />
       <FAQ />
       {/* <Appstore/> */}
